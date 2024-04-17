@@ -33,6 +33,7 @@ async function destroyHouse(houseId){
     <div class="p-3">
       <h2>Beds: {{ house.bedrooms }} | Bath: {{ house.bathrooms }}</h2>
       <h3>Floors: {{ house.levels }}</h3>
+      <h3>${{ house.price }}</h3>
       <p>{{ house.description }}</p>
       <button v-if="house.creatorId == account?.id" @click="destroyHouse(house.id)" class="btn btn-outline-danger">
         <i class="mdi mdi-home-off"></i>

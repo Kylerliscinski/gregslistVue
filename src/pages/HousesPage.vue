@@ -4,6 +4,7 @@ import { AppState } from "../AppState.js";
 import { housesService } from "../services/HousesService.js";
 import Pop from "../utils/Pop.js";
 import HouseCard from "../components/HouseCard.vue";
+import HouseFormModal from "../components/HouseFormModal.vue";
 
 const houses = computed(() => AppState.houses)
 const account = computed(() => AppState.account)
@@ -42,7 +43,7 @@ onMounted(() => {
     </section>
   </div>
 
-  <CarFormModal />
+  <HouseFormModal />
 </template>
 
 

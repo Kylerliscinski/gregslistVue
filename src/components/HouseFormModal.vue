@@ -61,7 +61,7 @@ async function createHouse(){
               <label for="houseLevels">Levels</label>
             </div>
             <div class="form-floating mb-3">
-              <input v-model="editableHouseData.year" type="number" class="form-control" id="houseYear" placeholder="Year" required min="1" max="20">
+              <input v-model="editableHouseData.year" type="number" class="form-control" id="houseYear" placeholder="Year" required  min="1800" max="2024">
               <label for="houseYear">Year</label>
             </div>
             <div class="form-floating mb-3">
@@ -78,6 +78,9 @@ async function createHouse(){
               <input v-model="editableHouseData.imgUrl" type="url" class="form-control" id="houseImgUrl"
                 placeholder="House Image" required maxlength="500">
               <label for="houseImgUrl">House Image</label>
+            </div>
+            <div class="text-end">
+              <button class="btn btn-success" type="submit">Submit</button>
             </div>
           </form>
         </div>
